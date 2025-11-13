@@ -1,6 +1,8 @@
 # Satisfactory Mod Installer
 
 This tool allows you to easily install Satisfactory mods (`.smod` files) into a specified folder structure.
+This is basically an easy way to install `.smod` files without manually extracting them, creating a folder, and naming it appropriately.
+
 
 ## Requirements
 
