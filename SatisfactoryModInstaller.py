@@ -27,7 +27,7 @@ def load_config():
 
 def save_config(settings):
     config = configparser.ConfigParser()
-    config[CONFIG_SECTION] = settings
+    config[CONFIG_SECTION] = {k: str(v) for k, v in settings.items() if v is not None}
     with open(CONFIG_FILE, 'w') as configfile:
         config.write(configfile)
 
