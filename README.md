@@ -1,23 +1,67 @@
 # Satisfactory Mod Installer
 
 This tool allows you to easily install Satisfactory mods (`.smod` files) into a specified folder structure.
+
+---
+
+## Version 2 (Current)
+
+This version introduces a complete overhaul of the application with a focus on modern design and improved user experience.
+
+*   **Modern UI**: The entire user interface has been redesigned using a dark theme, rounded corners, and a clean, minimal aesthetic.
+*   **Drag and Drop**: You can now drag and drop multiple `.smod` files directly onto the application window for quick and easy selection.
+*   **Installation Progress**: The "Install Mods" button now transforms into a progress bar during installation, providing clear visual feedback on the process.
+*   **Stable and Robust**: The underlying code has been refactored for better stability and structure.
+
+### Requirements
+
+*   **Windows Operating System**
+*   **Python 3.10+**
+*   **7-Zip**
+*   **Required Python Libraries**:
+    *   `customtkinter`: For the modern user interface.
+    *   `tkinterdnd2`: For drag-and-drop functionality.
+
+### Installation
+
+1.  **Install Python**: If you don't have Python, download and install it from [python.org](https://www.python.org/downloads/).
+2.  **Install 7-Zip**: If you don't have 7-Zip, download and install it from [7-zip.org](https://www.7-zip.org/).
+3.  **Install Required Libraries**: Open a command prompt or PowerShell and run the following command:
+    ```sh
+    pip install customtkinter tkinterdnd2
+    ```
+
+### Prerequisites
+
+**Important:** You must install the Satisfactory Mod Loader (SML) before installing mods. This tool only installs the mods themselves, not the loader. For complete and up-to-date instructions, please refer to the [official documentation](https://docs.ficsit.app/satisfactory-modding/latest/ManualInstallDirections.html).
+
+### Usage
+
+1.  **Run the script**: To run the application without a console window, it's recommended to rename the file from `SatisfactoryModInstaller.py` to `SatisfactoryModInstaller.pyw` and then double-click it.
+2.  Alternatively, you can run it from the command line:
+    ```
+    python SatisfactoryModInstaller.py
+    ```
+
+---
+
+## Version 1 (Legacy)
+
 This is basically an easy way to install `.smod` files without manually extracting them, creating a folder, and naming it appropriately.
 
-
-## Requirements
+### Requirements
 
 *   **Windows Operating System**
 *   **Python 3.10+**: Make sure Python is installed and added to your system's PATH.
 *   **7-Zip**: The tool uses 7-Zip to extract `.smod` files. It will try to find it automatically, but you may be prompted to provide the path to `7z.exe`.
-*   **Tkinter**: The graphical user interface is built with Tkinter, which is part of the Python standard library and should be included with your Python installation. If you get an error about Tkinter not being found, you may need to install it separately (e.g., on Debian/Ubuntu, this can be done with `sudo apt-get install python3-tk`).
+*   **Tkinter**: The graphical user interface is built with Tkinter, which is part of the Python standard library and should be included with your Python installation.
 
-## Installation
+### Installation
 
 1.  **Install Python**: If you don't have Python, download and install it from [python.org](https://www.python.org/downloads/). Make sure to check the box that says "Add Python to PATH" during installation.
-
 2.  **Install 7-Zip**: If you don't have 7-Zip, download and install it from [7-zip.org](https://www.7-zip.org/).
 
-## Prerequisites
+### Prerequisites
 
 **Important:** You must install the Satisfactory Mod Loader (SML) before installing mods. This tool only installs the mods themselves, not the loader.
 
@@ -29,13 +73,12 @@ To install SML manually:
 For complete and up-to-date instructions, please refer to the official documentation:
 [https://docs.ficsit.app/satisfactory-modding/latest/ManualInstallDirections.html](https://docs.ficsit.app/satisfactory-modding/latest/ManualInstallDirections.html)
 
-## Usage
+### Usage
 
 1.  **Run the script**: Open a command prompt or PowerShell in the same directory where you saved the script and run:
     ```
     python SatisfactoryModInstaller.py
     ```
-
 
 ## How it Works
 
